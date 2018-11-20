@@ -1,0 +1,30 @@
+package quyet.demo.hibernate.entity;
+
+public class Boss {
+	private int id;
+	private String name;
+	
+	
+	public Boss() {
+		
+	}
+	public Boss(String name) {
+		super();
+		
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}
