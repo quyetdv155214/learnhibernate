@@ -51,3 +51,6 @@ hs_err_pid*
 .idea/learnhibernate.iml
 .idea/encodings.xml
 .idea/compiler.xml
+.idea/dataSources/2672da21-f2c8-4eb8-85bf-44d219455471.xml
+.idea/dataSources.xml
+.idea/dataSources.local.xml

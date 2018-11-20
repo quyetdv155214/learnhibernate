@@ -2,19 +2,29 @@ package quyet.demo.hibernate.entities.example;
 
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Event {
     private int id;
 
     private Date eventDate;
     private String title;
+    private Set participants = new HashSet();
+
+    public Event() {
+    }
 
     public Event(Date eventDate, String title) {
         this.eventDate = eventDate;
         this.title = title;
     }
+    public Set getParticipants() {
+        return participants;
+    }
 
-    public Event() {
+    public void setParticipants(Set participants) {
+        this.participants = participants;
     }
 
     public int getId() {
