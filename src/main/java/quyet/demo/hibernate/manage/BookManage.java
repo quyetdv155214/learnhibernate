@@ -8,9 +8,10 @@ import quyet.demo.hibernate.entities.Book;
 import quyet.demo.hibernate.utils.HibernateUtil;
 
 public class BookManage {
-    private SessionFactory factory;
 
     public Integer addBook(String name, String author, double price){
+        SessionFactory factory;
+
         factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
 

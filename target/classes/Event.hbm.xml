@@ -4,8 +4,8 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="quyet.demo.hibernate.entities.example">
 
-    <class name="Event" table="EVENTS">
-        <id name="id" column="id">
+    <class name="Event" table="EVENT">
+        <id name="id" column="event_id">
             <generator class="native"/>
         </id>
         <property name="eventDate" type="timestamp" column="EVENT_DATE"/>

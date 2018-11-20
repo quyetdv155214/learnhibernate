@@ -28,6 +28,8 @@
         <mapping resource="Employee.hbm.xml" />
         <mapping resource="Boss.hbm.xml"/>
         <mapping resource="Book.hbm.xml"/>
+        <mapping resource="Person.hbm.xml"/>
+        <mapping resource="Event.hbm.xml"/>
 
 
     </session-factory>
