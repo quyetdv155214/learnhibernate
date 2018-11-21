@@ -2,21 +2,19 @@ package quyet.demo.hibernate.entities.simplehr;
 
 import com.sun.istack.internal.NotNull;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "department")
+@Table(name = "department" ,
+        uniqueConstraints = @UniqueConstraint(columnNames = "DEPT_NO"))
 public class Department {
     @Id @Column(name = "DEPT_ID")
     private long deptId;
 
-    @Column(name = "DEPT_NAME") @NotNull
+    @Column(name = "DEPT_NAME" , nullable = false) @NotNull
     private String deptName;
 
-    @Column(name = "DEPT_NO") @NotNull
+    @Column(name = "DEPT_NO" , unique = true) @NotNull
     private String deptNo;
 
     @Column(name = "LOCATION")
