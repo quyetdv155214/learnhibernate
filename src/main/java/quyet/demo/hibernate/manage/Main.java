@@ -1,5 +1,7 @@
 package quyet.demo.hibernate.manage;
 
+import quyet.demo.hibernate.manage.simplehr.ManageDept;
+
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
@@ -16,10 +18,10 @@ public class Main {
 //        PersonManage pm = new PersonManage();
 //        pm.addPersonToEvent(2, 3);
 
-        EventManage em = new EventManage();
-        List list = em.listEvents();
-        System.out.println("list event");
-        list.forEach(System.out::println);
+//        EventManage em = new EventManage();
+//        List list = em.listEvents();
+//        System.out.println("list event");
+//        list.forEach(System.out::println);
 
 //        PersonManage pm = new PersonManage();
 //        int personId = pm.addPerson(15, "nguyen van", "A", null);
@@ -35,6 +37,10 @@ public class Main {
 //        pm.addPersonToEvent(1, 1);
 //
 //        pm.addEmailToPerson(1, "newemail@gmail.com");
+
+        ManageDept md = new ManageDept();
+        List listDept = md.getListDept();
+        listDept.forEach(System.out::println);
 
     }
 
