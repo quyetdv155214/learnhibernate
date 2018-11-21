@@ -1,4 +1,4 @@
-package quyet.demo.hibernate.manage;
+package quyet.demo.hibernate.main;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;

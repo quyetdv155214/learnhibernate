@@ -1,13 +1,10 @@
-package quyet.demo.hibernate.manage;
+package quyet.demo.hibernate.main;
 
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
 import quyet.demo.hibernate.entities.example.Event;
 import quyet.demo.hibernate.entities.example.Person;
 import quyet.demo.hibernate.utils.HibernateUtil;
 
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 

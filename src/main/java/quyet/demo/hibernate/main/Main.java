@@ -1,10 +1,7 @@
-package quyet.demo.hibernate.manage;
+package quyet.demo.hibernate.main;
 
-import quyet.demo.hibernate.manage.simplehr.ManageDept;
+import quyet.demo.hibernate.main.simplehr.ManageDept;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 public class Main {

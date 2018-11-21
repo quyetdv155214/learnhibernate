@@ -1,10 +1,8 @@
-package quyet.demo.hibernate.manage.simplehr;
+package quyet.demo.hibernate.main.simplehr;
 
 import org.hibernate.Session;
-import quyet.demo.hibernate.entities.simplehr.Department;
 import quyet.demo.hibernate.utils.HibernateUtil;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ManageDept {

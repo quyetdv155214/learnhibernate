@@ -12,13 +12,16 @@
         <property name="hibernate.connection.password">1234</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <!-- List các file mapping XML -->
-        <mapping resource="Employee.hbm.xml" />
-        <mapping resource="Boss.hbm.xml"/>
-        <mapping resource="Book.hbm.xml"/>
-        <mapping resource="Person.hbm.xml"/>
-        <mapping resource="Event.hbm.xml"/>
-        <mapping class="quyet.demo.hibernate.entities.simplehr.Department"/>
+        <!--<mapping resource="Employee.hbm.xml" />-->
+        <!--<mapping resource="Boss.hbm.xml"/>-->
+        <!--<mapping resource="Book.hbm.xml"/>-->
+        <!--<mapping resource="Person.hbm.xml"/>-->
+        <!--<mapping resource="Event.hbm.xml"/>-->
+        <mapping class="quyet.demo.hibernate.entities.mappingexample.Person"/>
+        <mapping class="quyet.demo.hibernate.entities.mappingexample.PersonDetail"/>
 
     </session-factory>
 </hibernate-configuration>
