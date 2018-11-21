@@ -1,9 +1,6 @@
 package quyet.demo.hibernate.entities.mappingexample;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class PersonDetail {
@@ -12,6 +9,17 @@ public class PersonDetail {
     private int personDetailId;
     private String zipcode;
     private String address;
+
+    @OneToOne(mappedBy = "personDetail", cascade = CascadeType.ALL)
+    private Person person;
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 
     public int getPersonDetailId() {
         return personDetailId;
