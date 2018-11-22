@@ -4,7 +4,7 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
         <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver </property>
         <!-- Thông tin kết nối db -->
         <property name="hibernate.connection.url"> jdbc:mysql://localhost/simplehr</property>
@@ -13,19 +13,21 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
         <!-- List các file mapping XML -->
         <!--<mapping resource="Employee.hbm.xml" />-->
         <!--<mapping resource="Boss.hbm.xml"/>-->
         <!--<mapping resource="Book.hbm.xml"/>-->
-        <!--<mapping resource="Person.hbm.xml"/>-->
+        <!--<mapping resource="PersonEmbedded.hbm.xml"/>-->
         <!--<mapping resource="Event.hbm.xml"/>-->
-        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToOne.Person"/>-->
+        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToOne.PersonEmbedded"/>-->
         <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToOne.PersonDetail"/>-->
-        <mapping class="quyet.demo.hibernate.entities.mappingexample.oneToMany.College"/>
-        <mapping class="quyet.demo.hibernate.entities.mappingexample.oneToMany.Student"/>
+        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToMany.College"/>-->
+        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToMany.Student"/>-->
         <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.manyToMany.Delegate"/>-->
         <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.manyToMany.Event"/>-->
+        <mapping class="quyet.demo.hibernate.entities.embeddedObjects.AddressEmbedded"/>
+        <mapping class="quyet.demo.hibernate.entities.embeddedObjects.PersonEmbedded"/>
 
     </session-factory>
 </hibernate-configuration>
