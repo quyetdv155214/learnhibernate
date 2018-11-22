@@ -2,14 +2,11 @@ package quyet.demo.hibernate.entities.mappingexample.oneToOne;
 
 import javax.persistence.*;
 
-@Entity
+
 public class Person {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int personId;
     private String personName;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "pDetail_FK")
     private PersonDetail personDetail;
 
     public int getPersonId() {

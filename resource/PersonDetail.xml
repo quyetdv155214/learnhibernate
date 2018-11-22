@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="quyet.demo.hibernate.entities.mappingexample.oneToOne">
+    <class name="quyet.demo.hibernate.entities.mappingexample.oneToOne.PersonDetail" table="PERSONDETAIL">
+        <id name="personDetailId"
+            type="int">
+            <column name="persondetail"/>
+            <generator class="identity"/>
+        </id>
+        <property name="address" type="string" column="address"/>
+        <property name="zipcode" type="string" column="zipcode"/>
+        <one-to-one name="person" class="Person" cascade="all"/>
+
+    </class>
+
+</hibernate-mapping>

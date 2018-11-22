@@ -13,7 +13,7 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
         <!-- List các file mapping XML -->
         <!--<mapping resource="Employee.hbm.xml" />-->
         <!--<mapping resource="Boss.hbm.xml"/>-->
@@ -26,8 +26,10 @@
         <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToMany.Student"/>-->
         <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.manyToMany.Delegate"/>-->
         <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.manyToMany.Event"/>-->
-        <mapping class="quyet.demo.hibernate.entities.embeddedObjects.AddressEmbedded"/>
-        <mapping class="quyet.demo.hibernate.entities.embeddedObjects.PersonEmbedded"/>
+        <!--<mapping class="quyet.demo.hibernate.entities.embeddedObjects.AddressEmbedded"/>-->
+        <!--<mapping class="quyet.demo.hibernate.entities.embeddedObjects.PersonEmbedded"/>-->
 
+        <mapping resource="Person.hbm.xml"/>
+        <mapping resource="PersonDetail.xml"/>
     </session-factory>
 </hibernate-configuration>
