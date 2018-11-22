@@ -1,4 +1,4 @@
-package quyet.demo.hibernate.entities.mappingexample;
+package quyet.demo.hibernate.entities.mappingexample.oneToOne;
 
 import javax.persistence.*;
 

@@ -20,8 +20,12 @@
         <!--<mapping resource="Book.hbm.xml"/>-->
         <!--<mapping resource="Person.hbm.xml"/>-->
         <!--<mapping resource="Event.hbm.xml"/>-->
-        <mapping class="quyet.demo.hibernate.entities.mappingexample.Person"/>
-        <mapping class="quyet.demo.hibernate.entities.mappingexample.PersonDetail"/>
+        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToOne.Person"/>-->
+        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.oneToOne.PersonDetail"/>-->
+        <mapping class="quyet.demo.hibernate.entities.mappingexample.oneToMany.College"/>
+        <mapping class="quyet.demo.hibernate.entities.mappingexample.oneToMany.Student"/>
+        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.manyToMany.Delegate"/>-->
+        <!--<mapping class="quyet.demo.hibernate.entities.mappingexample.manyToMany.Event"/>-->
 
     </session-factory>
 </hibernate-configuration>
